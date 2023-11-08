@@ -23,13 +23,13 @@ function displayBooks(books) {
     </div>
     </div>`;
     bookList.innerHTML += card;
-    console.log(card);
+    // console.log(card);
   });
 
   const scartaButtons = document.querySelectorAll(".scarta");
   scartaButtons.forEach((button) => {
-    button.addEventListener("onclick", () => {
-      const removeCard = document.querySelector("col-md-3");
+    button.addEventListener("click", () => {
+      const removeCard = document.querySelector(".col-md-3");
       removeCard.remove();
     });
   });
