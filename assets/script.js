@@ -23,6 +23,7 @@ function displayBooks(books) {
     </div>
     </div>`;
     bookList.innerHTML += card;
+    console.log(card);
   });
 
   const scartaButtons = document.querySelectorAll(".scarta");
