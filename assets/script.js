@@ -27,10 +27,9 @@ function displayBooks(books) {
 
   const scartaButtons = document.querySelectorAll(".scarta");
   scartaButtons.forEach((button) => {
-    button.addEventListener("onclick", () => {
-      const bookId = button.getAttribute("data-book-id");
-      const bookCard = document.querySelector(`div[data-book-id="${bookId}"]`);
-      bookCard.remove();
+    button.addEventListener("click", () => {
+      const removeCard = document.getElementById("col-md-3");
+      removeCard.remove();
     });
   });
 }
