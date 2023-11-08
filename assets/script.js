@@ -27,8 +27,8 @@ function displayBooks(books) {
 
   const scartaButtons = document.querySelectorAll(".scarta");
   scartaButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const removeCard = document.getElementById("col-md-3");
+    button.addEventListener("onclick", () => {
+      const removeCard = document.querySelector("col-md-3");
       removeCard.remove();
     });
   });
